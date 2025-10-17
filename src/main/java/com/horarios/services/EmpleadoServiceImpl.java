@@ -1,13 +1,16 @@
 package com.horarios.services;
-import com.horarios.model.Empleado;
-import com.horarios.repository.EmpleadoRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.horarios.model.Empleado;
+import com.horarios.repository.EmpleadoRepository;
+
 @Service
 public class EmpleadoServiceImpl implements EmpleadoService {
+   
     @Autowired
     private EmpleadoRepository empleadoRepository;
 
